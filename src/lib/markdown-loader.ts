@@ -67,6 +67,7 @@ function findMarkdownFiles(dir: string): string[] {
 
 function parseMarkdownFile(relativePath: string, raw: string): Project | null {
   const id = relativePath.replace(/\.md$/, "").replace(/\s+/g, "-").replace(/\//g, "-").toLowerCase();
+  const fileName = relativePath.split("/").pop() || id; // Fallback to id if path has no segments
 
   // Extract title from first heading
   const titleMatch = raw.match(/^#\s+(.+)$/m);
@@ -86,10 +87,12 @@ function parseMarkdownFile(relativePath: string, raw: string): Project | null {
     if (line.trim() === "" || line.startsWith("---")) continue;
     if (line.startsWith("##") || line.startsWith("## ")) break;
     if (line.startsWith("#")) break;
+    if (line.includes("[") && line.includes("](")) continue; // Skip markdown links
+    if (line.includes("**") && line.includes("*")) continue; // Skip bold text
     descLines.push(line.trim());
   }
 
-  const description = descLines.join(" ").replace(/^[-*]\s+/, "").slice(0, 200) || "A project by Aziz Ouhibi";
+  const description = descLines.join(" ").replace(/^[-*]\s+/, "").replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\[([^]]+)\]\([^)]+\)/g, "$1").slice(0, 500) || "A permissioned Ethereum smart contract for recording, managing, and verifying tamper-proof veterinary health events on-chain. Built on Sepolia testnet with role-based access control and cryptographic hashes.";
 
   // Extract technologies from Tech Stack section
   const techMatch = raw.match(/##\s*Tech[\s]*Stack[\s]*\n([\s\S]*?)(?=\n##|\n#\s|$)/);
@@ -98,7 +101,12 @@ function parseMarkdownFile(relativePath: string, raw: string): Project | null {
     const techText = techMatch[1];
     const techItems = techText.match(/^- (.+)$/gm) || techText.match(/^- (.+)$/g) || [];
     techItems.forEach((item) => {
-      const tech = item.replace(/^- /, "").trim().split("\n")[0].trim();
+      let tech = item.replace(/^- /, "").trim().split("\n")[0].trim();
+      // Clean markdown styling
+      tech = tech.replace(/\*\*([^*]+)\*\*/g, "$1")
+                .replace(/\[([^]]+)\]\([^)]+\)/g, "$1")
+                .replace(/\[([^\]]+)\]/g, "$1")
+                .replace(/[^a-zA-Z0-9-_,.]/g, "");
       if (tech && tech.length > 0 && tech.length < 100) technologies.push(tech);
     });
   }
@@ -151,8 +159,7 @@ function parseMarkdownFile(relativePath: string, raw: string): Project | null {
     }
   }
 
-  // Check if featured
-  const featured = ["karhebti", "tunisie_telecom", "vet_contract", "ci-cd-ai-anomaly", "arabsoft"].some((k) => id.includes(k) || relativePath.includes(k));
+  const featured = ["karhebti", "tunisie_telecom", "vet_contract", "ci-cd-ai-anomaly", "arabsoft"].some((k) => fileName.includes(k) || relativePath.includes(k));
 
   return {
     id,
