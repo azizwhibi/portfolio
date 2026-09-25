@@ -1,0 +1,262 @@
+{
+  "nodes": [
+    {
+      "id": "claude_claude_md",
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_skill_md",
+      "label": "graphify skill",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_add_watch_md",
+      "label": "add-watch reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\add-watch.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_exports_md",
+      "label": "exports reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\exports.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_github_and_merge_md",
+      "label": "github-and-merge reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\github-and-merge.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_hooks_md",
+      "label": "hooks reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\hooks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_query_md",
+      "label": "query reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\query.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_transcribe_md",
+      "label": "transcribe reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\transcribe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_skills_graphify_references_update_md",
+      "label": "update reference",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\references\\update.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_md",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_md",
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_md",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_graphify",
+      "label": "graphify",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "claude_claude_md",
+      "target": "claude_skills_graphify_skill_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "concept_graphify",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_add_watch_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_exports_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_github_and_merge_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_hooks_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_query_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_transcribe_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_skills_graphify_skill_md",
+      "target": "claude_skills_graphify_references_update_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\.claude\\skills\\graphify\\SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md",
+      "target": "concept_graphify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_md",
+      "target": "concept_graphify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

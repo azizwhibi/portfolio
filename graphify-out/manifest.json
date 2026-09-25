@@ -1,0 +1,278 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1790275016.0756335,
+    "seen": 1790275422.3063967,
+    "ast_hash": "3ac995fbf93552a991ecab9b63f776aa",
+    "semantic_hash": "3ac995fbf93552a991ecab9b63f776aa"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1790245124.5224438,
+    "seen": 1790275422.3063967,
+    "ast_hash": "54d00955d3095f39d84d08ce1360d45c",
+    "semantic_hash": "54d00955d3095f39d84d08ce1360d45c"
+  },
+  "next.config.ts": {
+    "mtime": 1790202087.939843,
+    "seen": 1790275422.3063967,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "package.json": {
+    "mtime": 1790271706.673867,
+    "seen": 1790275422.3063967,
+    "ast_hash": "52cd66adc3e39e5f8a5428da0f5419e8",
+    "semantic_hash": "52cd66adc3e39e5f8a5428da0f5419e8"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1790202087.9050043,
+    "seen": 1790275422.3063967,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "settings.json": {
+    "mtime": 1790261887.2572079,
+    "seen": 1790275422.3063967,
+    "ast_hash": "cbef76fc6ab88107ea224f3ccd041041",
+    "semantic_hash": "cbef76fc6ab88107ea224f3ccd041041"
+  },
+  "src/app/api/chat/route.ts": {
+    "mtime": 1790271848.220815,
+    "seen": 1790275422.3063967,
+    "ast_hash": "c609af461c99da8a9f06dd1aaeb9c919",
+    "semantic_hash": "c609af461c99da8a9f06dd1aaeb9c919"
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1790204586.5305164,
+    "seen": 1790275422.3063967,
+    "ast_hash": "7886b3dcb60bfb93485b8b23635cd7a8",
+    "semantic_hash": "7886b3dcb60bfb93485b8b23635cd7a8"
+  },
+  "src/app/page.tsx": {
+    "mtime": 1790243432.7209437,
+    "seen": 1790275422.3063967,
+    "ast_hash": "e98dec8a5d3322d2f86c13951e501980",
+    "semantic_hash": "e98dec8a5d3322d2f86c13951e501980"
+  },
+  "src/components/chatbot/Chatbot.tsx": {
+    "mtime": 1790270763.645858,
+    "seen": 1790275422.3063967,
+    "ast_hash": "9a3631c01fcf5d05523cdf7ab6f092d5",
+    "semantic_hash": "9a3631c01fcf5d05523cdf7ab6f092d5"
+  },
+  "src/components/sections/About.tsx": {
+    "mtime": 1790243417.1009543,
+    "seen": 1790275422.3063967,
+    "ast_hash": "de5561f0242312fd66c3892d365932ab",
+    "semantic_hash": "de5561f0242312fd66c3892d365932ab"
+  },
+  "src/components/sections/CICD.tsx": {
+    "mtime": 1790244755.78366,
+    "seen": 1790275422.3063967,
+    "ast_hash": "e8b7e4bef9a0fe2dda17a138e1af620b",
+    "semantic_hash": "e8b7e4bef9a0fe2dda17a138e1af620b"
+  },
+  "src/components/sections/Contact.tsx": {
+    "mtime": 1790204886.0654368,
+    "seen": 1790275422.3063967,
+    "ast_hash": "eb28f0b06076fd679032c4b162e614f0",
+    "semantic_hash": "eb28f0b06076fd679032c4b162e614f0"
+  },
+  "src/components/sections/Education.tsx": {
+    "mtime": 1790204570.7054765,
+    "seen": 1790275422.3063967,
+    "ast_hash": "8efce5199aedb1d816fe95022df1f0ca",
+    "semantic_hash": "8efce5199aedb1d816fe95022df1f0ca"
+  },
+  "src/components/sections/Experience.tsx": {
+    "mtime": 1790204554.2224367,
+    "seen": 1790275422.3063967,
+    "ast_hash": "69a9dfee5d44175550c9f53ce254dddf",
+    "semantic_hash": "69a9dfee5d44175550c9f53ce254dddf"
+  },
+  "src/components/sections/Footer.tsx": {
+    "mtime": 1790204886.178516,
+    "seen": 1790275422.3063967,
+    "ast_hash": "289d8707c53e1a0a61a8226ce23ae0c4",
+    "semantic_hash": "289d8707c53e1a0a61a8226ce23ae0c4"
+  },
+  "src/components/sections/Hero.tsx": {
+    "mtime": 1790244761.0976305,
+    "seen": 1790275422.3063967,
+    "ast_hash": "282fbcab4125ea37f30050e79bfd0099",
+    "semantic_hash": "282fbcab4125ea37f30050e79bfd0099"
+  },
+  "src/components/sections/Navigation.tsx": {
+    "mtime": 1790204850.106151,
+    "seen": 1790275422.3063967,
+    "ast_hash": "cc08cf6713533c725734422d75d6af6f",
+    "semantic_hash": "cc08cf6713533c725734422d75d6af6f"
+  },
+  "src/components/sections/Projects.tsx": {
+    "mtime": 1790243518.4778173,
+    "seen": 1790275422.3063967,
+    "ast_hash": "eccded9c3c7348b320135ac47f64db7a",
+    "semantic_hash": "eccded9c3c7348b320135ac47f64db7a"
+  },
+  "src/components/sections/Skills.tsx": {
+    "mtime": 1790204917.948638,
+    "seen": 1790275422.3063967,
+    "ast_hash": "7a20aee2c11edfc29ff0cba8fca05ac9",
+    "semantic_hash": "7a20aee2c11edfc29ff0cba8fca05ac9"
+  },
+  "src/components/ui/Icons.tsx": {
+    "mtime": 1790204831.6189506,
+    "seen": 1790275422.3063967,
+    "ast_hash": "1f6737dd319cd2cb720345f5cb751686",
+    "semantic_hash": "1f6737dd319cd2cb720345f5cb751686"
+  },
+  "src/components/ui/blur-fade.tsx": {
+    "mtime": 1790202321.232536,
+    "seen": 1790275422.3063967,
+    "ast_hash": "e31e2dbc8143485b44d3a89c52d61584",
+    "semantic_hash": "e31e2dbc8143485b44d3a89c52d61584"
+  },
+  "src/components/ui/dot-pattern.tsx": {
+    "mtime": 1790202322.1501286,
+    "seen": 1790275422.3063967,
+    "ast_hash": "a738cbab74b5b5c6beeb6d6a1be253b9",
+    "semantic_hash": "a738cbab74b5b5c6beeb6d6a1be253b9"
+  },
+  "src/lib/chatbot-engine.ts": {
+    "mtime": 1790243500.6155183,
+    "seen": 1790275422.3063967,
+    "ast_hash": "0373b9168b861c9823b04cf0c98216fb",
+    "semantic_hash": "0373b9168b861c9823b04cf0c98216fb"
+  },
+  "src/lib/markdown-loader.ts": {
+    "mtime": 1790244884.9189515,
+    "seen": 1790275422.3063967,
+    "ast_hash": "a92f43244b3cc1f89a4b6fcfd2d52572",
+    "semantic_hash": "a92f43244b3cc1f89a4b6fcfd2d52572"
+  },
+  "src/lib/portfolio-data.ts": {
+    "mtime": 1790244776.910883,
+    "seen": 1790275422.3063967,
+    "ast_hash": "278e35e127748531be9e4870884adfbc",
+    "semantic_hash": "278e35e127748531be9e4870884adfbc"
+  },
+  "src/lib/utils.ts": {
+    "mtime": 1790202317.4252355,
+    "seen": 1790275422.3063967,
+    "ast_hash": "ea1c194ee828369e6fcdde84b4d8b8ba",
+    "semantic_hash": "ea1c194ee828369e6fcdde84b4d8b8ba"
+  },
+  "tsconfig.json": {
+    "mtime": 1790202088.188791,
+    "seen": 1790275422.3063967,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1790275016.0724666,
+    "seen": 1790275422.3063967,
+    "ast_hash": "9b31786b637be3c13978bec4c2330752",
+    "semantic_hash": "9b31786b637be3c13978bec4c2330752"
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1790275016.070965,
+    "seen": 1790275422.3063967,
+    "ast_hash": "b10224376cdb873ee154b818d39aa5bb",
+    "semantic_hash": "b10224376cdb873ee154b818d39aa5bb"
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1790186747.8328626,
+    "seen": 1790275422.3063967,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": "d59d027fe449f06aa03905a01184e779"
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1790186747.8338773,
+    "seen": 1790275422.3063967,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": "9da2a2152e60a22f07f05fed5158f287"
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1790186748.5496597,
+    "seen": 1790275422.3063967,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1790186748.5522661,
+    "seen": 1790275422.3063967,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1790186748.8474884,
+    "seen": 1790275422.3063967,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": "3c46f8ad006874260614ed8657d02307"
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1790186748.998584,
+    "seen": 1790275422.3063967,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": "67b6a5fa6c0974e18f60db9f8932fbd8"
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1790186749.9801047,
+    "seen": 1790275422.3063967,
+    "ast_hash": "9378bd03d56baaf78bd738ab3848f142",
+    "semantic_hash": "9378bd03d56baaf78bd738ab3848f142"
+  },
+  "AGENTS.md": {
+    "mtime": 1790202168.610081,
+    "seen": 1790275422.3063967,
+    "ast_hash": "01e8142356e15c3404e0d84c48187cd0",
+    "semantic_hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "CLAUDE.md": {
+    "mtime": 1790275016.0746346,
+    "seen": 1790275422.3063967,
+    "ast_hash": "b0517ee048d45b5cd5463430230eb52f",
+    "semantic_hash": "b0517ee048d45b5cd5463430230eb52f"
+  },
+  "README.md": {
+    "mtime": 1790202087.8786044,
+    "seen": 1790275422.3063967,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "src/projects desc/arabsoft.md": {
+    "mtime": 1790244773.7889762,
+    "seen": 1790275422.3063967,
+    "ast_hash": "224212029754afc503a87bcd4f6321e0",
+    "semantic_hash": "224212029754afc503a87bcd4f6321e0"
+  },
+  "src/projects desc/karhebti android.md": {
+    "mtime": 1790241671.2990074,
+    "seen": 1790275422.3063967,
+    "ast_hash": "660628d62be81ddd194e66ff047ae7e4",
+    "semantic_hash": "660628d62be81ddd194e66ff047ae7e4"
+  },
+  "src/projects desc/karhebti backend.md": {
+    "mtime": 1790241888.6603703,
+    "seen": 1790275422.3063967,
+    "ast_hash": "5a8f8b5471f9e0d14f2315a8f6656654",
+    "semantic_hash": "5a8f8b5471f9e0d14f2315a8f6656654"
+  },
+  "src/projects desc/karhebti ios.md": {
+    "mtime": 1790244773.6363406,
+    "seen": 1790275422.3063967,
+    "ast_hash": "583440a861658ecc74926ccd030110f6",
+    "semantic_hash": "583440a861658ecc74926ccd030110f6"
+  },
+  "src/projects desc/tunisie_telecom.md": {
+    "mtime": 1790244891.1011505,
+    "seen": 1790275422.3063967,
+    "ast_hash": "31c0426e23de46ae15bd7d381b56105b",
+    "semantic_hash": "31c0426e23de46ae15bd7d381b56105b"
+  },
+  "src/projects desc/vet_contract.md": {
+    "mtime": 1790241559.3378377,
+    "seen": 1790275422.3063967,
+    "ast_hash": "8f09e8a12eadfcfd2e117d7f2358d8b6",
+    "semantic_hash": "8f09e8a12eadfcfd2e117d7f2358d8b6"
+  }
+}

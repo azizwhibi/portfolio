@@ -1,0 +1,298 @@
+{
+  "nodes": [
+    {
+      "id": "src_projects_desc_arabsoft_arabsoft_rn_ai_assistant",
+      "label": "Arabsoft RN AI Assistant",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\src\\projects desc\\arabsoft.md",
+      "source_location": null,
+      "source_url": "https://github.com/azizwhibi/company-knowledge-chatbot",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_arabsoft_prompt_tuned_chatbot",
+      "label": "Prompt-tuned Chatbot",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\arabsoft.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_android_karhebti_android",
+      "label": "Karhebti Android",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md",
+      "source_location": null,
+      "source_url": "https://github.com/yourusername/karhebti-android.git",
+      "captured_at": null,
+      "author": "Karhebti Development Team",
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_android_material_design_3",
+      "label": "Material Design 3",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_android_mvvm",
+      "label": "MVVM Architecture",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_backend_karhebti_backend",
+      "label": "Karhebti Backend",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti backend.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_backend_nestjs",
+      "label": "NestJS",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti backend.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_backend_mongodb",
+      "label": "MongoDB",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti backend.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_ios_karhebti_ios",
+      "label": "Karhebti iOS",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti ios.md",
+      "source_location": null,
+      "source_url": "https://github.com/karhebti-app/karhebti-ios",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_karhebti_ios_swiftui",
+      "label": "SwiftUI",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti ios.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_tunisie_telecom_ci_cd_ai_anomaly",
+      "label": "CI/CD AI Anomaly Detection",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\src\\projects desc\\tunisie_telecom.md",
+      "source_location": null,
+      "source_url": "https://github.com/azizwhibi/ci-cd-ai-anomaly",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_tunisie_telecom_anomaly_detection",
+      "label": "Anomaly Detection",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\tunisie_telecom.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_vet_contract_veterinary_health_events",
+      "label": "Veterinary Health Events Contract",
+      "file_type": "document",
+      "source_file": "D:\\testtest\\src\\projects desc\\vet_contract.md",
+      "source_location": null,
+      "source_url": "https://github.com/azizwhibi/vet-smart-contract.git",
+      "captured_at": null,
+      "author": "Animalia Team",
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_vet_contract_solidity",
+      "label": "Solidity",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\vet_contract.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "src_projects_desc_vet_contract_ipfs",
+      "label": "IPFS",
+      "file_type": "concept",
+      "source_file": "D:\\testtest\\src\\projects desc\\vet_contract.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_projects_desc_arabsoft_arabsoft_rn_ai_assistant",
+      "target": "src_projects_desc_arabsoft_prompt_tuned_chatbot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\arabsoft.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_android_karhebti_android",
+      "target": "src_projects_desc_karhebti_android_material_design_3",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_android_karhebti_android",
+      "target": "src_projects_desc_karhebti_android_mvvm",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_backend_karhebti_backend",
+      "target": "src_projects_desc_karhebti_backend_nestjs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti backend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_backend_karhebti_backend",
+      "target": "src_projects_desc_karhebti_backend_mongodb",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti backend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_ios_karhebti_ios",
+      "target": "src_projects_desc_karhebti_ios_swiftui",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti ios.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_tunisie_telecom_ci_cd_ai_anomaly",
+      "target": "src_projects_desc_tunisie_telecom_anomaly_detection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\tunisie_telecom.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_vet_contract_veterinary_health_events",
+      "target": "src_projects_desc_vet_contract_solidity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\vet_contract.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_vet_contract_veterinary_health_events",
+      "target": "src_projects_desc_vet_contract_ipfs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\testtest\\src\\projects desc\\vet_contract.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_android_karhebti_android",
+      "target": "src_projects_desc_karhebti_backend_karhebti_backend",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "src_projects_desc_karhebti_ios_karhebti_ios",
+      "target": "src_projects_desc_karhebti_backend_karhebti_backend",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti ios.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "karhebti_ecosystem",
+      "label": "Karhebti Platform",
+      "nodes": [
+        "src_projects_desc_karhebti_android_karhebti_android",
+        "src_projects_desc_karhebti_backend_karhebti_backend",
+        "src_projects_desc_karhebti_ios_karhebti_ios"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\testtest\\src\\projects desc\\karhebti android.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

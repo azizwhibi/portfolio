@@ -1,0 +1,26 @@
+D:\testtest\.claude\CLAUDE.md
+D:\testtest\.claude\skills\graphify\SKILL.md
+D:\testtest\.claude\skills\graphify\references\add-watch.md
+D:\testtest\.claude\skills\graphify\references\exports.md
+D:\testtest\.claude\skills\graphify\references\extraction-spec.md
+D:\testtest\.claude\skills\graphify\references\github-and-merge.md
+D:\testtest\.claude\skills\graphify\references\hooks.md
+D:\testtest\.claude\skills\graphify\references\query.md
+D:\testtest\.claude\skills\graphify\references\transcribe.md
+D:\testtest\.claude\skills\graphify\references\update.md
+D:\testtest\AGENTS.md
+D:\testtest\CLAUDE.md
+D:\testtest\README.md
+D:\testtest\src\projects desc\arabsoft.md
+D:\testtest\src\projects desc\karhebti android.md
+D:\testtest\src\projects desc\karhebti backend.md
+D:\testtest\src\projects desc\karhebti ios.md
+D:\testtest\src\projects desc\tunisie_telecom.md
+D:\testtest\src\projects desc\vet_contract.md
+D:\testtest\public\aziz.png
+D:\testtest\public\file.svg
+D:\testtest\public\globe.svg
+D:\testtest\public\next.svg
+D:\testtest\public\vercel.svg
+D:\testtest\public\window.svg
+D:\testtest\src\aziz.png
