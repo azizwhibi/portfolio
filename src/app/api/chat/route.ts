@@ -93,8 +93,8 @@ export async function POST(request: NextRequest) {
         { role: "system", content: systemMessage },
         ...limitedMessages,
       ],
-      temperature: 0.7,
-      max_completion_tokens: 1024,
+      temperature: 0.5,
+      max_completion_tokens: 2048,
       top_p: 1,
       stop: null,
     });
