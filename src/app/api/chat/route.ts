@@ -60,7 +60,7 @@ Answer using only the verified portfolio information below. Never invent facts.
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { messages, systemPrompt } = body as { messages?: Array<{ role: string; content: string }>; systemPrompt?: string };
+    const { messages, systemPrompt } = body as { messages?: Array<any>; systemPrompt?: string };
 
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       return NextResponse.json({ error: "Messages array is required" }, { status: 400 });
@@ -72,7 +72,10 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    const limitedMessages = messages.slice(-MAX_HISTORY_LENGTH).map(({ id, ...msg }) => msg);
+    const limitedMessages = messages.slice(-MAX_HISTORY_LENGTH).map(msg => {
+      const { id, ...rest } = msg;
+      return rest;
+    });
 
     if (!process.env.GROQ_API_KEY) {
       return NextResponse.json({
