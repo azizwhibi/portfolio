@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Groq from "groq-sdk";
 
-const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-120b";
+const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
 const MAX_MESSAGE_LENGTH = 2000;
 const MAX_HISTORY_LENGTH = 20;
 
@@ -93,10 +93,9 @@ export async function POST(request: NextRequest) {
         { role: "system", content: systemMessage },
         ...limitedMessages,
       ],
-      temperature: 1,
-      max_completion_tokens: 2048,
+      temperature: 0.7,
+      max_completion_tokens: 1024,
       top_p: 1,
-      reasoning_effort: "medium",
       stop: null,
     });
 
