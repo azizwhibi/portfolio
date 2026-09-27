@@ -41,3 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 **/settings.json
+.claude/ 
+.history/ 
+.claude/ 
+.history/ 
