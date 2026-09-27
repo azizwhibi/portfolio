@@ -6,6 +6,7 @@ import { BlurFade } from "@/components/ui/blur-fade";
 import { ExternalLink, Search, Filter, ChevronDown, ChevronUp } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { Project } from "@/lib/markdown-loader";
+import { TechIcon } from "@/components/ui/TechIcons";
 
 const categories = ["All", "Mobile", "Backend", "DevOps", "AI/AIOps", "Testing", "Security", "Cloud"];
 
@@ -60,18 +61,25 @@ function ProjectCard({ project, index, isExpanded, onToggle }: ProjectCardProps)
         </div>
       )}
 
-      {/* Technologies */}
-      <div className="flex flex-wrap gap-1.5 mb-3">
+      {/* Technologies - Display as Icons */}
+      <div className="flex flex-wrap items-center gap-2 mb-3">
         {visibleTechs.map((tech) => {
+          // Clean technology name
           const cleanTech = typeof tech === "string"
             ? tech.replace(/\*\*([^*]+)\*\*/g, "$1")
                    .replace(/\[([^]]+)\]\([^)]+\)/g, "$1")
                    .replace(/\[([^\]]+)\]/g, "$1")
             : tech;
+          
+          // Map technology to icon name
+          const iconName = cleanTech.toLowerCase();
+          
           return (
-            <span key={tech} className="text-xs px-2 py-0.5 rounded-full bg-blue-600/10 text-blue-400 border border-blue-600/20">
-              {cleanTech}
-            </span>
+            <TechIcon 
+              key={cleanTech} 
+              name={iconName} 
+              className="w-6 h-6"
+            />
           );
         })}
         {project.technologies.length > 3 && (

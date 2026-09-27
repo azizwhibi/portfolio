@@ -34,11 +34,7 @@ export function Hero() {
               </h1>
             </BlurFade>
 
-            <BlurFade delay={0.3} inView>
-              <h2 className="text-lg sm:text-xl text-gray-400 font-medium">
-                {portfolioData.title}
-              </h2>
-            </BlurFade>
+            {/* Title removed - no longer needed */}
 
             <BlurFade delay={0.35} inView>
               <div className="flex items-center gap-2 text-gray-500 text-sm">
@@ -130,11 +126,7 @@ export function Hero() {
                 {/* Gradient border effect */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-600/20 to-transparent pointer-events-none" />
               </div>
-              {/* Name overlay at bottom */}
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-md rounded-xl px-4 py-2 border border-white/10">
-                <p className="text-white text-sm font-semibold">{portfolioData.name}</p>
-                <p className="text-gray-400 text-xs">{portfolioData.title}</p>
-              </div>
+              {/* Removed name and title overlays */}
             </div>
           </BlurFade>
         </div>

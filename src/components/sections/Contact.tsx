@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BlurFade } from "@/components/ui/blur-fade";
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { portfolioData } from "@/lib/portfolio-data";
 
@@ -25,6 +25,7 @@ export function Contact() {
   const [form, setForm] = useState<FormState>({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [apiError, setApiError] = useState<string>("");
 
   const validate = useCallback((data: FormState): FormErrors => {
     const errs: FormErrors = {};
@@ -36,20 +37,42 @@ export function Contact() {
     return errs;
   }, []);
 
-  const handleSubmit = useCallback((e: React.FormEvent) => {
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
     const errs = validate(form);
     setErrors(errs);
     if (Object.keys(errs).length > 0) return;
 
     setStatus("loading");
-    // Simulate submission delay
-    setTimeout(() => {
-      // Developer note: Connect to a form backend or email API (e.g., Resend, Formspree, SMTP)
-      console.log("Contact form submitted (no backend connected):", form);
+    setApiError("");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          subject: `New Portfolio Message from ${form.name}`,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || data.success === false) {
+        setStatus("error");
+        setApiError(data.message || "Something went wrong. Please try again.");
+        return;
+      }
+
       setStatus("success");
       setForm({ name: "", email: "", message: "" });
-    }, 1000);
+    } catch {
+      setStatus("error");
+      setApiError("Network error. Please check your connection and try again.");
+    }
   }, [form, validate]);
 
   const handleChange = (field: keyof FormState, value: string) => {
@@ -57,6 +80,7 @@ export function Contact() {
     if (errors[field as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [field]: undefined }));
     }
+    if (apiError) setApiError("");
   };
 
   return (
@@ -121,7 +145,20 @@ export function Contact() {
                     exit={{ opacity: 0, height: 0 }}
                     className="p-4 bg-green-600/10 border border-green-600/20 rounded-xl text-green-400 text-sm"
                   >
-                    Message sent! (Note: No backend connected — this is a demo. Connect a form service to actually send messages.)
+                    Message sent successfully! I'll get back to you soon.
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <AnimatePresence>
+                {status === "error" && apiError && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="p-4 bg-red-600/10 border border-red-600/20 rounded-xl text-red-400 text-sm"
+                  >
+                    {apiError}
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -202,11 +239,6 @@ export function Contact() {
                   </>
                 )}
               </motion.button>
-
-              <p className="text-xs text-gray-600">
-                {/* Developer note: Connect a form backend or email API (e.g., Resend, Formspree, SMTP) here to actually send messages. */}
-                This is a demo form. A server-side email service must be connected to send messages.
-              </p>
             </form>
           </BlurFade>
         </div>

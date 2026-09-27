@@ -77,31 +77,47 @@ function parseMarkdownFile(relativePath: string, raw: string): Project | null {
   const lines = raw.split("\n");
   let descLines: string[] = [];
   let foundTitle = false;
+  let foundOverview = false;
   let inCodeBlock = false;
 
   for (const line of lines) {
-    if (line.startsWith("# ")) { foundTitle = true; continue; }
-    if (line.startsWith("```")) { inCodeBlock = !inCodeBlock; continue; }
+    if (line.startsWith("# ")) {
+      foundTitle = true;
+      continue;
+    }
+    if (line.startsWith("```")) {
+      inCodeBlock = !inCodeBlock;
+      continue;
+    }
     if (inCodeBlock) continue;
     if (!foundTitle) continue;
     if (line.trim() === "" || line.startsWith("---")) continue;
-    if (line.startsWith("##") || line.startsWith("## ")) break;
-    if (line.startsWith("#")) break;
-    if (line.includes("[") && line.includes("](")) continue; // Skip markdown links
-    if (line.includes("**") && line.includes("*")) continue; // Skip bold text
+    if (line.startsWith("##") && line.startsWith("## Overview")) {
+      foundOverview = true;
+      continue;
+    }
+    if (line.startsWith("##") && foundOverview) break;
+    if (line.startsWith("##") && !foundOverview) break;
+    if (line.startsWith("#") && foundOverview) break;
+    if (line.includes("[") && line.includes("](") || line.includes("**") && line.includes("*")) continue;
     descLines.push(line.trim());
   }
 
-  const description = descLines.join(" ").replace(/^[-*]\s+/, "").replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\[([^]]+)\]\([^)]+\)/g, "$1").slice(0, 500) || "A permissioned Ethereum smart contract for recording, managing, and verifying tamper-proof veterinary health events on-chain. Built on Sepolia testnet with role-based access control and cryptographic hashes.";
+  const description = descLines.join(" ").replace(/^[-*]\s+/, "").replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\[([^]]+)\]\([^)]+\)/g, "$1").slice(0, 500) || "";
 
   // Extract technologies from Tech Stack section
-  const techMatch = raw.match(/##\s*Tech[\s]*Stack[\s]*\n([\s\S]*?)(?=\n##|\n#\s|$)/);
+  const techMatch = raw.match(/##\s*Tech[\s]*Stack[\s]*\n([\s\S]*?)(?=\n##|\n#\s|$)/m);
   const technologies: string[] = [];
   if (techMatch) {
     const techText = techMatch[1];
-    const techItems = techText.match(/^- (.+)$/gm) || techText.match(/^- (.+)$/g) || [];
+    // Match both simple dash format and bold markdown format
+    const techItems = techText.match(/^- \*\*([^*]+)\*\*:\s*.+/gm) || 
+                      techText.match(/^- (.+)$/gm) || 
+                      techText.match(/^- (.+)$/gm) || 
+                      [];
     techItems.forEach((item) => {
-      let tech = item.replace(/^- /, "").trim().split("\n")[0].trim();
+      let tech = item.replace(/^- \*\*([^*]+)\*\*:\s*/, "").trim().split("\n")[0].trim()
+                     .replace(/^- /, "").trim().split("\n")[0].trim();
       // Clean markdown styling
       tech = tech.replace(/\*\*([^*]+)\*\*/g, "$1")
                 .replace(/\[([^]]+)\]\([^)]+\)/g, "$1")
@@ -110,6 +126,44 @@ function parseMarkdownFile(relativePath: string, raw: string): Project | null {
       if (tech && tech.length > 0 && tech.length < 100) technologies.push(tech);
     });
   }
+
+  // Map technology names to icon names
+  const technologyIconMap: Record<string, string> = {
+    "Solidity": "Solidity",
+    "Ethereum": "Solidity", // Use solidity icon for ethereum too
+    "Blockchain": "Solidity",
+    "React Native": "React Native",
+    "Flutter": "Flutter",
+    "Swift": "Swift",
+    "Kotlin": "Kotlin",
+    "Android": "Android",
+    "NestJS": "NestJS",
+    "Spring Boot": "Spring Boot",
+    "Next.js": "Next.js",
+    "Node.js": "Node.js",
+    "TypeScript": "TypeScript",
+    "JavaScript": "JavaScript",
+    "Python": "Python",
+    "Docker": "Docker",
+    "Kubernetes": "Docker", // Use docker icon for kubernetes
+    "GitHub Actions": "GitHub Actions",
+    "Git": "Git",
+    "GitHub": "GitHub",
+    "AWS": "AWS",
+    "Firebase": "Firebase",
+    "MongoDB": "MongoDB",
+    "PostgreSQL": "PostgreSQL",
+    "MySQL": "MySQL",
+    "Java": "Java",
+    "PHP": "PHP",
+    "HTML5": "HTML5",
+    "CSS3": "CSS3",
+    "Flask": "Flask",
+    "Symfony": "Symfony",
+    "AI/AIOps": "Node.js", // Use node icon as fallback
+    "DevOps": "Docker", // Use docker icon as fallback
+    "Cloud": "AWS",
+  };
 
   // Also scan the whole file for tech keywords if no Tech Stack section found
   if (technologies.length === 0) {
@@ -182,11 +236,20 @@ function determineCategory(
   description: string
 ): string {
   const combined = `${relativePath} ${title} ${description} ${technologies.join(" ")}`.toLowerCase();
+  
+  // Manual categorization based on project files
+  if (relativePath.includes("karhebti android")) return "Mobile";
+  if (relativePath.includes("karhebti ios")) return "Mobile";
+  if (relativePath.includes("vet_contract") || combined.includes("solidity") || combined.includes("blockchain") || combined.includes("ethereum") || combined.includes("smart contract")) return "Security";
+  if (relativePath.includes("arabsoft") && (combined.includes("react native") || combined.includes("java") || combined.includes("spring boot"))) return "Backend and Mobile";
+  if (relativePath.includes("karhebti backend")) return "Backend";
+  if (relativePath.includes("ci/cd")) return "AI/AIOps";
+  
+  // Fallback categorization
   if (combined.includes("react native") || combined.includes("flutter") || combined.includes("mobile") || combined.includes("swift") || combined.includes("kotlin")) return "Mobile";
   if (combined.includes("ci/cd") || combined.includes("github actions") || combined.includes("docker") || combined.includes("kubernetes") || combined.includes("devops") || combined.includes("anomaly") || combined.includes("cicd")) return "DevOps";
   if (combined.includes("ai") || combined.includes("aiops") || combined.includes("anomaly detection") || combined.includes("machine learning") || combined.includes("scikit")) return "AI/AIOps";
   if (combined.includes("nestjs") || combined.includes("python") || combined.includes("flask") || combined.includes("java") || combined.includes("spring") || combined.includes("symfony") || combined.includes("backend") || combined.includes("api")) return "Backend";
-  if (combined.includes("ai") || combined.includes("aiops") || combined.includes("anomaly detection") || combined.includes("machine learning") || combined.includes("scikit")) return "AI/AIOps";
   if (combined.includes("testing") || combined.includes("test") || combined.includes("security") || combined.includes("codeql") || combined.includes("gitleaks") || combined.includes("trivy")) return "Testing";
   if (combined.includes("blockchain") || combined.includes("solidity") || combined.includes("smart contract") || combined.includes("ethereum")) return "Security";
   if (combined.includes("cloud") || combined.includes("aws") || combined.includes("kubernetes")) return "Cloud";

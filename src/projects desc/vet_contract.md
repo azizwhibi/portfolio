@@ -1,16 +1,18 @@
 # 🐾 Veterinary Health Events Contract
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Solidity-0.8.20-%23878787" alt="Solidity Version">
-  <a href="https://hardhat.org/"><img src="https://img.shields.io/badge/Build-Hardhat-ff69b4?logo=hardhat" alt="Hardhat Build"></a>
-  <a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/></a>
-</p>
+## Overview
+A permissioned Ethereum smart contract built with Solidity for recording, managing, and verifying veterinary health events on-chain.
 
-A permissioned Ethereum smart contract for recording, managing, and verifying veterinary health events on-chain. Health event data is stored as cryptographic hashes with optional IPFS metadata references, enabling tamper-proof audit trails for animal medical records.
+## Tech Stack
 
----
-
-## 📋 Table of Contents
+- **Security**: Ethereum smart contract security
+- **Solidity**: 0.8.20
+- **Hardhat**: Build tool
+- **MIT**: License
+- **Blockchain**: Permissioned Ethereum smart contract
+- **Solidity**: Permissioned access control
+- **Solidity**: On-chain data integrity
+- **Blockchain**: Ethereum smart contract
 
 - [Overview](#overview)
 - [Features](#features)
@@ -35,6 +37,7 @@ A permissioned Ethereum smart contract for recording, managing, and verifying ve
 
 ## 🎯 Overview
 
+
 The `VeterinaryHealthEvents` contract provides a decentralized system for managing veterinary health records. Key design principles include:
 
 - **Permission-based Access Control** — Only the contract owner or authorized addresses can record and update health events. Read access is granted to designated readers (e.g., auditors, veterinarians).
@@ -52,6 +55,7 @@ The `VeterinaryHealthEvents` contract provides a decentralized system for managi
 | 🌐 IPFS Integration | Optional URI references to full event metadata on IPFS |
 | ⏱ Timestamp Tracking | Records both creation (`timestamp`) and last update (`updatedAt`) times |
 | 🔍 Event Verification | Verify existence of health events without fetching full struct data |
+
 
 ---
 
