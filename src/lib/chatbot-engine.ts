@@ -14,7 +14,10 @@ function getTopic(normalizedQ: string): string | null {
   if (normalizedQ.includes("blockchain")) return "blockchain";
   if (normalizedQ.includes("backend technol")) return "backendApis";
   if (normalizedQ.includes("contact")) return "contact";
-  if (normalizedQ.includes("education") || normalizedQ.includes("certified") || normalizedQ.includes("aws certified")) return "generalProfile";
+  if (normalizedQ.includes("hedera") || normalizedQ.includes("hcda") || normalizedQ.includes("hcf")) return "hedera";
+  if (normalizedQ.includes("nvidia") || normalizedQ.includes("diffusion") || normalizedQ.includes("generative ai")) return "nvidia";
+  if (normalizedQ.includes("certif") || normalizedQ.includes("license") || normalizedQ.includes("credential")) return "certifications";
+  if (normalizedQ.includes("education")) return "generalProfile";
   if (normalizedQ.includes("language")) return "languages";
   if (normalizedQ.includes("planvent")) return "planvent";
   if (normalizedQ.includes("what did aziz build") || normalizedQ.includes("what did aziz")) return "wehacklabs";
@@ -25,6 +28,9 @@ function formatTopic(topic: string): string | null {
   const kb = portfolioData.chatbotKnowledgeBase;
   switch (topic) {
     case "generalProfile": return kb.generalProfile;
+    case "certifications": return kb.certifications;
+    case "hedera": return kb.hedera;
+    case "nvidia": return kb.nvidia;
     case "wehacklabs": return kb.wehacklabs;
     case "tunisietelecom": return kb.tunisietelecom;
     case "ciCdAiAnomaly": return kb.ciCdAiAnomaly;

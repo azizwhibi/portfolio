@@ -27,9 +27,15 @@ Answer using only the verified portfolio information below. Never invent facts.
 - Phone: +216 93 177 115
 - GitHub: https://github.com/azizwhibi
 - LinkedIn: https://www.linkedin.com/in/azizouhibi/
-- Certified: AWS Certified Cloud Practitioner (2026)
+- Certified: AWS Certified Cloud Practitioner (2026), Hedera Certified Developer Associate (HCDA, Oct 2026), Hedera Certified Foundation (HCF, Oct 2026), NVIDIA Generative AI with Diffusion Models (Oct 2026)
 - Education: ESPRIT Engineering Cycle (Software Engineering), ESPRIT Preparatory Cycle, Baccalaureate in Computer Science from Lycée de Jendouba (2022)
 - Languages: Arabic (Native), French (Fluent), English (Fluent)
+
+**Certifications:**
+- AWS Certified Cloud Practitioner (2026): Cloud computing certification validating foundational cloud architecture, security, and services. Verification: https://cp.certmetrics.com/amazon/en/public/verify/credential/acc28ea1e9034413802a68609c1efd89
+- Hedera Certified Developer Associate - HCDA (October 25, 2026): Hedera/Hashgraph certification validating development of decentralized applications, smart contract deployment, consensus service, and token service.
+- Hedera Certified Foundation - HCF (October 24, 2026): Hedera/Hashgraph certification validating distributed ledger principles, hashgraph consensus, and Hedera network architecture.
+- NVIDIA: Generative AI with Diffusion Models (October 28, 2026): Certificate of Competency (ID: -nr04UduTE2Ww6WMwO-jAA) validating practical mastery of generative AI architectures, denoising diffusion probabilistic models, conditioning, and image synthesis workflows. Verification: https://learn.nvidia.com/certificates?id=-nr04UduTE2Ww6WMwO-jAA
 
 **Experience:**
 - WeHackLabs (Sept 2025–Present): Part-Time Software Developer — PWA, Agile team, features and debugging

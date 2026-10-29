@@ -1,3 +1,16 @@
+export interface CertificateItem {
+  id: string;
+  name: string;
+  issuer: string;
+  year: string;
+  date?: string;
+  description: string;
+  credentialId?: string;
+  image?: string;
+  pdfUrl?: string;
+  verifyUrl?: string;
+}
+
 export const portfolioData = {
   name: "Aziz Ouhibi",
   age:22,
@@ -232,6 +245,49 @@ export const portfolioData = {
       name: "AWS Certified Cloud Practitioner",
       year: "2026",
     },
+    certifications: [
+      {
+        id: "aws",
+        name: "AWS Certified Cloud Practitioner",
+        issuer: "Amazon Web Services (AWS)",
+        year: "2026",
+        date: "2026",
+        description: "Cloud computing certification validating foundational knowledge of cloud services, security, architecture, and pricing models.",
+        verifyUrl: "https://cp.certmetrics.com/amazon/en/public/verify/credential/acc28ea1e9034413802a68609c1efd89",
+      },
+      {
+        id: "hcda",
+        name: "Hedera Certified Developer Associate (HCDA)",
+        issuer: "Hedera / Hashgraph",
+        year: "2026",
+        date: "October 25, 2026",
+        description: "Developer certification validating expertise in developing decentralized applications, smart contract deployment, consensus service, and token service on the Hedera network.",
+        image: "/certificates/hcda.png",
+        pdfUrl: "/certificates/hcda.pdf",
+      },
+      {
+        id: "hcf",
+        name: "Hedera Certified Foundation (HCF)",
+        issuer: "Hedera / Hashgraph",
+        year: "2026",
+        date: "October 24, 2026",
+        description: "Foundational certification validating core understanding of distributed ledger technology (DLT), consensus mechanisms, and decentralized architecture on Hedera.",
+        image: "/certificates/hcf.png",
+        pdfUrl: "/certificates/hcf.pdf",
+      },
+      {
+        id: "nvidia",
+        name: "Generative AI with Diffusion Models",
+        issuer: "NVIDIA (Certificate of Competency)",
+        year: "2026",
+        date: "October 28, 2026",
+        credentialId: "-nr04UduTE2Ww6WMwO-jAA",
+        description: "Competency certification in Generative AI architectures, denoising diffusion probabilistic models, conditioning, and image generation pipelines.",
+        image: "/certificates/nvidia.png",
+        pdfUrl: "/certificates/nvidia.pdf",
+        verifyUrl: "https://learn.nvidia.com/certificates?id=-nr04UduTE2Ww6WMwO-jAA",
+      },
+    ] as readonly CertificateItem[],
   },
   languages: [
     { language: "Arabic", level: "Native" },
@@ -240,7 +296,13 @@ export const portfolioData = {
   ],
   chatbotKnowledgeBase: {
     generalProfile:
-      "Aziz Ouhibi is a software engineering student at ESPRIT in Ariana, Tunisia. His primary focus is backend development, mobile development, CI/CD, DevOps practices, cloud computing, software quality, testing, debugging, and monitoring. He is an AWS Certified Cloud Practitioner.",
+      "Aziz Ouhibi is a software engineering student at ESPRIT in Ariana, Tunisia. His primary focus is backend development, mobile development, CI/CD, DevOps practices, cloud computing, distributed ledger technology, generative AI, software quality, testing, debugging, and monitoring. He holds certifications from AWS (Certified Cloud Practitioner), Hedera (HCDA & HCF), and NVIDIA (Generative AI with Diffusion Models).",
+    certifications:
+      "Aziz holds four professional certifications earned in 2026: 1) AWS Certified Cloud Practitioner (validates foundational cloud architecture, security, and services). 2) Hedera Certified Developer Associate - HCDA (issued Oct 25, 2026, validating smart contracts, consensus service, token service, and dApp engineering on Hedera). 3) Hedera Certified Foundation - HCF (issued Oct 24, 2026, validating distributed ledger principles, hashgraph consensus, and Hedera network architecture). 4) NVIDIA Generative AI with Diffusion Models (Certificate of Competency, issued Oct 28, 2026, ID: -nr04UduTE2Ww6WMwO-jAA, validating diffusion probabilistic models, conditioning, and generative AI pipelines).",
+    hedera:
+      "Aziz earned two Hedera certifications in October 2026: Hedera Certified Developer Associate (HCDA, issued Oct 25, 2026) demonstrating practical dApp and smart contract development skills, and Hedera Certified Foundation (HCF, issued Oct 24, 2026) validating comprehensive knowledge of the Hedera network, hashgraph consensus, and token services.",
+    nvidia:
+      "Aziz holds the NVIDIA Certificate of Competency in Generative AI with Diffusion Models (issued October 28, 2026, Certification ID: -nr04UduTE2Ww6WMwO-jAA). This certification demonstrates hands-on competence with diffusion architectures, denoising models, conditioning, and image synthesis workflows.",
     wehacklabs:
       "Aziz has worked as a Part-Time Software Developer at WeHackLabs in Tunis, Tunisia since September 2025. His work includes feature delivery, testing, debugging, building a responsive Progressive Web App, requirements analysis, prioritisation, and Agile collaboration.",
     tunisietelecom:
@@ -284,6 +346,9 @@ export const portfolioData = {
       "What did Aziz do with blockchain in VetAI?",
       "What backend technologies does Aziz use?",
       "Is Aziz AWS certified?",
+      "What certifications does Aziz have?",
+      "Tell me about Aziz's Hedera certifications.",
+      "Tell me about Aziz's NVIDIA AI certification.",
       "What did Aziz build at ArabSoft?",
       "How can I contact Aziz?",
     ],
